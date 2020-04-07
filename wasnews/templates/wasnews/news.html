@@ -5,6 +5,7 @@
     <title>WAS News</title>
 </head>
 <body>
+    <a href = "{% url 'wasnews:index' %}">Return to Home</a>
     <h1>{{ newsstory.heading }}</h1>
     <p>{{ newsstory.content }}</p>
 </body>
