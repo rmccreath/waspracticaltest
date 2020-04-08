@@ -5,11 +5,13 @@
     <title>WAS News</title>
 </head>
 <body>
+    <h1>WAS News Stories</h1>
     {% if latest_newsstory_list %}
         <ul>
             {% for newsstory in latest_newsstory_list %}
             <li><a href = "{% url 'wasnews:news' newsstory.id %}">{{ newsstory.heading }}</a> -
-                <i>{{ newsstory.pub_date }}</i></li>
+                {{ newsstory.content|truncatewords:10 }}
+                <br/><i>{{ newsstory.pub_date }}</i></li>
             {% endfor %}
         </ul>
     {% else %}
