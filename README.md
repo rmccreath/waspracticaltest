@@ -1,5 +1,5 @@
 # Web Application Systems Practical Test
-A Practical Test Project for Uni's Web App Systems
+A Practical Test Project for GA Web App Systems
 
 ## Overview
 You are to create a simple Django app that displays a list of news stories, including a heading, date and time of publication, and the story text. The news stories will be entered by a user via the admin functionality that comes for ‘free’ with Django.
